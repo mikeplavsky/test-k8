@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata: 
+    name: srv-deployment
+spec: 
+    replicas: 3
+    template: 
+        metadata:
+            labels: srv
+        spec:
+            containers:
+            - name: srv
+              image: mikeplavsky/srv
+              ports:
+              - containerPort: 80
+
