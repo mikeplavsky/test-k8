@@ -12,7 +12,7 @@ spec:
             containers:
             - 
                 name: srv
-                image: mikeplavsky/srv
+                image: mikeplavsky/srv:0.1
                 ports:
                 - 
                     containerPort: 80
