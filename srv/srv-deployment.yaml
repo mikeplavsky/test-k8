@@ -6,11 +6,14 @@ spec:
     replicas: 3
     template: 
         metadata:
-            labels: srv
+            labels: 
+                app: srv
         spec:
             containers:
-            - name: srv
-              image: mikeplavsky/srv
-              ports:
-              - containerPort: 80
+            - 
+                name: srv
+                image: mikeplavsky/srv
+                ports:
+                - 
+                    containerPort: 80
 
